@@ -1,0 +1,20 @@
+{
+  "name": "ai-copy-saas",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:www": "turbo dev --filter=@ai-copy/www",
+    "dev:app": "turbo dev --filter=@ai-copy/app",
+    "dev:admin": "turbo dev --filter=@ai-copy/admin",
+    "build": "turbo build"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
