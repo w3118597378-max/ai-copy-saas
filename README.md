@@ -25,19 +25,40 @@
 
 ---
 
-## 📸 核心页面
+## 📸 核心页面截图
 
-<!-- TODO: 替换为实际截图链接 -->
+<p align="center">
+  <strong>营销官网首页</strong>
+  <br>
+  <img src="screenshots/01-homepage.png" alt="营销官网首页" width="600">
+</p>
 
-| 页面 | 截图 | 说明 |
-|------|------|------|
-| **营销官网** (www) | `[截图待补充]` | 首页、功能展示、定价方案、FAQ |
-| **生成工作台** (app) | `[截图待补充]` | 产品信息表单 + AI 生成结果展示 |
-| **套餐管理** (app) | `[截图待补充]` | 套餐查看、升级、支付、订阅管理 |
-| **历史记录** (app) | `[截图待补充]` | 生成记录查看、筛选、复用 |
-| **管理后台** (admin) | `[截图待补充]` | 用户列表、生成记录、订阅状态总览 |
+<p align="center">
+  <strong>定价方案页 &amp; FAQ</strong>
+  <br>
+  <img src="screenshots/02-pricing.png" alt="定价方案" width="280">
+  <img src="screenshots/03-faq.png" alt="FAQ" width="280">
+</p>
 
-> 在线演示：[营销官网](https://ai-copy-www.vercel.app)
+<p align="center">
+  <strong>登录 &amp; 注册</strong>
+  <br>
+  <img src="screenshots/04-login.png" alt="登录" width="280">
+  <img src="screenshots/05-register.png" alt="注册" width="280">
+</p>
+
+<details>
+<summary>📱 页面说明</summary>
+
+| 页面 | 说明 | 在线链接 |
+|------|------|----------|
+| **营销官网** | Hero、功能展示、定价方案、FAQ、CTA | [ai-copy-www.vercel.app](https://ai-copy-www.vercel.app) |
+| **生成工作台** | 产品信息表单 + AI 生成结果展示（需登录） | [ai-copy-app.vercel.app/generate](https://ai-copy-app.vercel.app/generate) |
+| **套餐管理** | 套餐查看、升级、Stripe 支付、订阅管理 | [ai-copy-app.vercel.app/billing](https://ai-copy-app.vercel.app/billing) |
+| **历史记录** | 生成记录查看、筛选、复用 | [ai-copy-app.vercel.app/history](https://ai-copy-app.vercel.app/history) |
+| **管理后台** | 用户列表、生成记录、订阅状态 | [ai-copy-admin.vercel.app](https://ai-copy-admin.vercel.app) |
+
+</details>
 
 ---
 
