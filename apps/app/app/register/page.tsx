@@ -55,6 +55,11 @@ export default function RegisterPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary-600 text-white text-lg font-bold">C</div>
             <span className="text-2xl font-bold text-gray-900">CopyAI</span>
           </Link>
+          <div className="mt-2">
+            <a href={process.env.NEXT_PUBLIC_WWW_URL || "http://localhost:3000"} className="text-sm text-gray-400 hover:text-gray-600 transition-colors">
+              ← 返回官网
+            </a>
+          </div>
           <h1 className="mt-6 text-2xl font-bold text-gray-900">创建账户</h1>
           <p className="mt-2 text-gray-500">免费注册，立即开始生成文案</p>
         </div>

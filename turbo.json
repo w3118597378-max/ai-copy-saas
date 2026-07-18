@@ -14,7 +14,9 @@
         "STRIPE_WEBHOOK_SECRET",
         "STRIPE_PRICE_PRO_MONTHLY",
         "STRIPE_PRICE_PRO_YEARLY",
-        "NEXT_PUBLIC_APP_URL"
+        "NEXT_PUBLIC_APP_URL",
+        "NEXT_PUBLIC_ADMIN_URL",
+        "NEXT_PUBLIC_WWW_URL"
       ]
     },
     "dev": {

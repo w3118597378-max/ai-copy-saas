@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "../cn";
-import { LayoutDashboard, Users, FileText, Receipt, Shield } from "lucide-react";
+import { LayoutDashboard, Users, FileText, Receipt, Shield, ExternalLink, Wand2 } from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "/", label: "总览", icon: LayoutDashboard },
@@ -33,6 +33,16 @@ export function AdminSidebar() {
             </Link>
           );
         })}
+        <div className="pt-4 mt-4 border-t border-gray-800">
+          <a href={process.env.NEXT_PUBLIC_WWW_URL || "http://localhost:3000"}
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white transition-colors">
+            <ExternalLink className="h-5 w-5" /> <span>返回官网</span>
+          </a>
+          <a href={`${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3001"}/generate`}
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white transition-colors">
+            <Wand2 className="h-5 w-5" /> <span>用户工作台</span>
+          </a>
+        </div>
       </nav>
       <div className="border-t border-gray-800 p-4">
         <div className="flex items-center gap-3">

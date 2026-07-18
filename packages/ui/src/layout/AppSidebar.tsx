@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { cn } from "../cn";
 import { Badge } from "../Badge";
 import { useAuth } from "../auth/AuthProvider";
-import { Wand2, History, CreditCard, LogOut } from "lucide-react";
+import { Wand2, History, CreditCard, LogOut, ExternalLink, Shield } from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "/generate", label: "生成工作台", icon: Wand2 },
@@ -41,6 +41,16 @@ export function AppSidebar({ userName = "用户", userPlan = "free", usageLabel 
             </Link>
           );
         })}
+        <div className="pt-4 mt-4 border-t border-gray-100">
+          <a href={process.env.NEXT_PUBLIC_WWW_URL || "http://localhost:3000"}
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors">
+            <ExternalLink className="h-5 w-5" /> <span>返回官网</span>
+          </a>
+          <a href={`${process.env.NEXT_PUBLIC_ADMIN_URL || "http://localhost:3002"}/`}
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors">
+            <Shield className="h-5 w-5" /> <span>管理后台</span>
+          </a>
+        </div>
       </nav>
       <div className="border-t border-gray-100 p-4">
         {usageLabel && (

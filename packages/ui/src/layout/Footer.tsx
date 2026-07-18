@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 export function Footer() {
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3001";
   return (
     <footer className="border-t border-gray-100 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -21,16 +22,17 @@ export function Footer() {
             </ul>
           </div>
           <div>
+            <h4 className="text-sm font-semibold text-gray-900">应用</h4>
+            <ul className="mt-4 space-y-3">
+              <li><a href={`${appUrl}/login`} className="text-sm text-gray-500 hover:text-gray-900">用户登录</a></li>
+              <li><a href={`${appUrl}/register`} className="text-sm text-gray-500 hover:text-gray-900">免费注册</a></li>
+            </ul>
+          </div>
+          <div>
             <h4 className="text-sm font-semibold text-gray-900">法律</h4>
             <ul className="mt-4 space-y-3">
               <li><span className="text-sm text-gray-500">隐私政策</span></li>
               <li><span className="text-sm text-gray-500">服务条款</span></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-sm font-semibold text-gray-900">联系我们</h4>
-            <ul className="mt-4 space-y-3">
-              <li><span className="text-sm text-gray-500">hello@copyai.com</span></li>
             </ul>
           </div>
         </div>
