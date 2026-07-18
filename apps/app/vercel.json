@@ -1,7 +1,6 @@
 {
   "framework": "nextjs",
   "buildCommand": "cd ../.. && npx turbo build --filter=@ai-copy/app",
-  "outputDirectory": ".next",
   "installCommand": "cd ../.. && pnpm install",
   "ignoreCommand": "cd ../.. && npx turbo-ignore --fallback=HEAD^"
 }
