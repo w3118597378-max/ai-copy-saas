@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd ../.. && npx turbo build --filter=@ai-copy/www",
+  "buildCommand": "cd ../.. && pnpm turbo build --filter=@ai-copy/www",
   "installCommand": "cd ../.. && pnpm install",
-  "ignoreCommand": "cd ../.. && npx turbo-ignore --fallback=HEAD^"
+  "ignoreCommand": "cd ../.. && pnpm turbo-ignore --fallback=HEAD^"
 }
