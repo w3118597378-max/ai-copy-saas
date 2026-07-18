@@ -1,7 +1,6 @@
 {
   "framework": "nextjs",
-  "buildCommand": "npx turbo build --filter=@ai-copy/admin",
-  "installCommand": "pnpm install",
-  "outputDirectory": "apps/admin/.next",
-  "ignoreCommand": "npx turbo-ignore --fallback=HEAD^"
+  "buildCommand": "cd ../.. && npx turbo build --filter=@ai-copy/admin",
+  "installCommand": "cd ../.. && pnpm install",
+  "ignoreCommand": "cd ../.. && npx turbo-ignore --fallback=HEAD^"
 }
