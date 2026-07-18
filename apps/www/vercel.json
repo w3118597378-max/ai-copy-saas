@@ -1,6 +1,7 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd ../.. && npx turbo build --filter=@ai-copy/www",
-  "installCommand": "cd ../.. && pnpm install",
-  "ignoreCommand": "cd ../.. && npx turbo-ignore --fallback=HEAD^"
+  "buildCommand": "npx turbo build --filter=@ai-copy/www",
+  "installCommand": "pnpm install",
+  "outputDirectory": "apps/www/.next",
+  "ignoreCommand": "npx turbo-ignore --fallback=HEAD^"
 }
